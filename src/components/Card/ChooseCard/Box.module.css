@@ -1,0 +1,48 @@
+.box {
+  background-color: #ffff;
+  border-radius: 20px;
+  height: 300px;
+  box-shadow: 0 3px 15px rgb(0 0 0 / 25%);
+  text-align: center;
+  width: 500px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: transform 0.3s, 0.3s;
+  padding: 10px;
+}
+.box:hover {
+  transform: translateY(-10px);
+  background-color: transparent;
+}
+.box:hover .button {
+  color: #6c63ff;
+  background-color: white;
+}
+.icon {
+  font-size: 70px;
+  color: rgb(44, 44, 44);
+  text-align: center;
+  margin: 25px;
+}
+.text {
+  font-size: 15px;
+  margin: 40px;
+  color: #333;
+}
+.button {
+  padding: 15px 30px;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: #6c63ff;
+  border: 1px solid #6c63ff;
+  color: white;
+}
+@media (max-width: 768px) {
+  .box {
+    width: auto;
+  }
+}

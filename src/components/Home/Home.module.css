@@ -1,0 +1,146 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+  flex-wrap: wrap;
+}
+
+.content {
+  max-width: 50%;
+  flex: 1 1 400px;
+  margin-bottom: 20px;
+}
+
+.tagline {
+  color: #ff4081;
+  font-size: 15px;
+  font-weight: 600;
+  font-weight: bold;
+  line-height: 18px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.title {
+  font-size: 45px;
+  font-weight: bold;
+  margin: 20px 0;
+  color: #333;
+}
+
+.highlight {
+  color: #ff4081;
+}
+
+.description {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.button {
+  padding: 15px 30px;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: #6c63ff;
+  border: 1px solid #6c63ff;
+  color: white;
+  margin-left: 20px;
+}
+.change {
+  background-color: #ff4081;
+  border: 1px solid #ff4081;
+}
+.button:hover {
+  background-color: #ffffff;
+  color: #6c63ff;
+}
+.change:hover {
+  background-color: white;
+  color: #ff4081;
+}
+.exploreMore {
+  background-color: #ff4081;
+  color: white;
+}
+
+.exploreMore:hover {
+  background-color: #e0356d;
+}
+
+.imageContainer {
+  position: relative;
+  max-width: 40%;
+  flex: 1 1 400px;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .content {
+    text-align: center;
+    max-width: 100%;
+    flex: 1 1 250px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .buttons {
+    justify-content: center;
+  }
+
+  .imageContainer {
+    max-width: 80%;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 24px;
+  }
+
+  .tagline {
+    font-size: 12px;
+  }
+
+  .description {
+    font-size: 13px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .button {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .imageContainer {
+    max-width: 100%;
+  }
+}

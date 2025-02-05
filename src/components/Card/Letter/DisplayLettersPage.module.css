@@ -1,0 +1,99 @@
+.container {
+  background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  margin-top: 10px;
+  color: #3b8582;
+  font-size: 45px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.title h2 {
+  font-size: 2rem;
+  color: #333;
+  margin: 0;
+}
+
+.title h4 {
+  font-size: 1.2rem;
+  color: #555;
+  margin: 10px 0 0;
+}
+.subtitle {
+  color: #577c93;
+  font-size: 24px;
+  margin: 15px 0;
+  font-weight: normal;
+}
+
+.subtitle > span {
+  font-weight: bold;
+}
+.media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px auto;
+}
+
+.image {
+  width: 400px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  flex-shrink: 0;
+}
+
+.audio {
+  width: 450px;
+}
+
+.button {
+  padding: 20px 50px;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: #789db3;
+  border: 1px solid #789db3;
+  color: white;
+  letter-spacing: 1.8px;
+}
+
+.button:hover {
+  background-color: #375566;
+}
+
+@media (max-width: 768px) {
+  .media-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .img,
+  .audio {
+    max-width: 100%;
+  }
+
+  .button {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
+}

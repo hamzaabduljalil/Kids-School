@@ -1,0 +1,16 @@
+.div {
+  background-color: #ff0000;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #ff0000;
+  z-index: 100;
+  width: fit-content;
+  padding: 50px;
+}
+.div .span {
+  font-size: 35px;
+  letter-spacing: 5px;
+  mix-blend-mode: difference;
+}
